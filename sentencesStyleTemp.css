@@ -1,0 +1,121 @@
+/* nav */
+body{
+  line-height: 1.4rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: 0.24rem;
+}
+.MarginForCheck{
+  line-height: 1.4rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: -1.5rem;
+}
+/* .ulForE {
+  line-height: 1.17rem;
+} */
+.noDots {
+  list-style-type: none;
+}
+.liPadding {
+  margin-left: 1.25rem;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2rem;
+  padding: .5rem;
+  display: flex;
+  align-items: center;
+  background: white;
+  font-family: Georgia;
+}
+.nav-left-items {
+  display: flex;
+  margin-right: auto;
+}
+.nav-item-current {
+  cursor: default;  !important;
+  /* cursor뭐하지 */
+  color : #29A2A6;
+
+}
+.nav-right-items {
+  display: flex;
+  margin-left: auto;
+  margin-right: .3rem;
+}
+.nav-item {
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.text{
+  margin-top: 3.5rem;
+  margin-left:-.4rem;
+}
+
+/* checkbox */
+input[type="checkbox"]
+{
+  vertical-align: middle;
+  margin-top: .05rem;
+}
+
+/* switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 2rem;
+  height: 1.2rem;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1rem;
+  width: 1rem;
+  left: .1rem;
+  bottom: .1rem;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #269599;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(1rem);
+  -ms-transform: translateX(1rem);
+  transform: translateX(.8rem);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 1.1rem;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
