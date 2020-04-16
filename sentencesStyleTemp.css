@@ -11,9 +11,6 @@ body{
   margin-bottom: 40rem;
   margin-left: -1.5rem;
 }
-/* .ulForE {
-  line-height: 1.17rem;
-} */
 .noDots {
   list-style-type: none;
 }
@@ -38,7 +35,7 @@ body{
 }
 .nav-item-current {
   cursor: default;  !important;
-  /* cursor뭐하지 */
+  /* cursor*/
   color : #29A2A6;
 
 }

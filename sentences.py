@@ -8,17 +8,10 @@ print()
 import cgi, os
 
 form = cgi.FieldStorage()
-listStrF = '' #\n넣을지는 나중에 결정
+listStrF = ''
 currentPageE = ''
 currentPageK = ''
 currentPageEK = ''
-
-# def getList():
-#     files = os.listdir('data')
-#     listStr = ''
-#     for item in files:
-#         listStr = listStr +'<li><a href="index.py?id={name}">{name}</a></li>'.format(name=item)
-#     return listStr
 
 if 'id' in form:
     pageId = form["id"].value
@@ -65,10 +58,6 @@ else:
     for line in listStr:
         line = '<li>{sentences}</li>'.format(sentences=line)
         listStrF = listStrF + line
-
-# a:hover {
-#   color: yellow;
-# }
 
 print('''<!doctype html>
 <html>
