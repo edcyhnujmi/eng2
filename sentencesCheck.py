@@ -8,7 +8,7 @@ print()
 import cgi, os
 
 form = cgi.FieldStorage()
-listStrF = '\n' #\n넣을지는 나중에 결정
+listStrF = ''
 currentPageE = ''
 currentPageK = ''
 currentPageEK = ''
