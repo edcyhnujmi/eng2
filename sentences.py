@@ -38,7 +38,7 @@ if 'id' in form:
         senK.close()
 
         listStrF = '\n'
-        numSen = 450 #문장 개수에 따라 수정필요함!
+        numSen = 456 #문장 개수에 따라 수정필요함!
         with open("senEng", encoding='UTF8') as fileE:
                 for i, line in enumerate(fileE):
                     if i < numSen :
